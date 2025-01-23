@@ -17,34 +17,16 @@ h2{
 
 /*-------header------*/
 
-header{
-    background-color: black;
-    position: sticky;
-    padding: 10px;
-    top: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header a{
-    color: rgb(243, 236, 236);
-}
-header a h1{
-    font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-header nav ul{
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li{
-margin: 10px;
+.bg-menu{
+    background-color: rgb(11, 89, 206);
 }
 
 header nav ul li a{
     color: rgb(250, 249, 249);
+}
+
+header nav img{
+    width: 110px;
 }
 
 /*-------main-------*/
@@ -52,7 +34,7 @@ header nav ul li a{
 
 .hero{
     text-align: center;
-    color: rgb(239, 240, 241);
+    color: rgb(7, 7, 7);
     height: 400px;
     background-image: url("../img/09690000-0a00-0242-f236-08da6b3b1abc_w1200_r1.jpeg");
     background-position: center;
@@ -73,69 +55,288 @@ header nav ul li a{
     font-size: 20px;
 }
 
-.productos h2{
-    background-color: black;
-    color: white;
-    padding: 20px;
-}
-
-.productos .productos-contenedor{
+.historia{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
-.productos .productos-contenedor div{
-    border: 1px solid gray;
-    width: 250px; 
-    height: 300px;
-    text-align: center;
-    margin: 15px;
-}
-
-.productos div h3{
-    font-size: 22px;
-    margin: 20px;
-}
-
-.productos div a{
-    background-color: black;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.productos img{
-    width: 250px;
-    height: 200px;
-}
-
-.bienvenidos{
-    display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.bienvenidos div{
+.historia div{
     width: 50%;
 }
 
-.bienvenidos div h2{
+.historia div h2{
     font-size: 30px;
 }
 
-.bienvenidos div p{
+.historia div p{
     font-size: 15px;
+    color: rgb(5, 5, 5);
 }
 
-.bienvenidos img{
+.historia img{
     width: 650px;
     height: 500px;
 }
 
+.productos{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
 
+.card{
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
 
+.card-header img{
+    border-radius: 8px;
+}
+
+.card-body{
+    padding: 20px 15px;
+    text-align: justify;
+}
+
+.grid-galeria{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+    gap: 15px;
+}
+
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-item{
+    position: relative;
+    margin: 25PX;
+    background-color: black;
+}
+
+.grid-item h3{
+    position: absolute;
+}
+
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.container-form a i{
+    color: #286bcf;
+    margin-right: 10px;
+}
+
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #286bcf;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover{
+    background: #286bcf;
+}
 /*--------footer-----*/
+
+.footer{
+    position: relative;
+    width: 100%;
+    background: #286bcf;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.icon-elem{
+    list-style: none;
+}
+
+.icon{
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menu-elem{
+    list-style: none;
+}
+
+.menu-icon{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.75;
+    transition: 0.3s;
+}
+
+.menu-icon:hover{
+    opacity: 1;
+}
+
+.text{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/*--------MEDIAQUIRES------*/
+
+@media screen and (max-width:690PX) {
+    header{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .historia{
+        flex-direction: column;
+    }
+    .historia img{
+        width: 550px;
+        height: 350px;
+    }
+    .historia div{
+        width: 350px;
+        padding: 15px;
+    }
+}
+
+@media(max-width: 950px){
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .card{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-header{
+        height: 200px;
+        overflow: hidden;
+    }
+    .card-body{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width: 950px){
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:488px) {
+    .grid-galeria{
+        display: grid;
+        grid-column: 1ft;
+        grid-auto-rows: 220px;
+    }
+    .grid-item{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+@media screen and (min-width:1210px){
+    .container-form{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+/*---------Pseudoclases-------*/

@@ -1,45 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-    <title>La Artesana / Panaderia Artesanal </title>
+    <title>Dulce esperanza / Panaderia Artesanal </title> 
 </head>
 <body>
     <header>
-        <a href=""><h1>La Artesana</h1></a>
-        <nav>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a href="./pages/productos.html">Productos</a></li>
-            <li><a href="./pages/servicios.html">Servicios</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg bg-menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/_3d6464ca-20e6-49b1-ac95-c1f420b877d7.jpeg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/panaderia.html">Panaderia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/pasteleria.html">Pasteleria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/galleteria.html">Galleteria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/cafeteria.html">Cafeteria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contactos</a>
+                        </li>
         </nav>
     </header>
     <main>
         <section class="hero">
-            <h2>Fundado en 2023 </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vel deserunt harum inventore doloremque. Vel voluptatum, dolor perferendis molestiae deserunt sed impedit velit nam. Eius adipisci atque vel eveniet nulla?</p>
+            <h2>Fundado</h2>
+            <p>En el año 1985, en el tranquilo pueblo de Estado Vargas, Venezuela, Isabella decidió seguir su pasión por
+                la panadería. Con mucho esfuerzo y el apoyo de su familia, abrió "La Dulce Esperanza", un lugar donde
+                cada bocado es una delicia y cada receta tiene una historia.</p>
             <a href="Reserva tu lugar"></a>
         </section>
-        <section class="bienvenidos">
+        <section class="grid-galeria">
+            <div class="grid-item">
+                <img src="./img/tradicion-maquinaria-panaderia.jpg" alt="">
+                <h3>Panaderia</h3>
+            </div>
+            <div class="grid-item">
+                <img src="./img/pastelerias-cdmx-1024x683.jpg" alt="">
+                <h3>Pasteleria</h3>
+            </div>
+            <div class="grid-item">
+                <img src="./img/galletas-2-scaled.jpg" alt="">
+                <h3>Galleteria</h3>
+            </div>
+            <div class="grid-item">
+                <img src="./img/pqs-como-abrir-cafeteria.jpg" alt="">
+                <h3>Cafeteria</h3>
+        </section>
+        <section class="historia">
             <div>
-                <h2>Bienvenidos</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt sed esse impedit exercitationem consectetur eius rerum, odit magni, iusto sit, a quae laborum veritatis. Debitis impedit ducimus animi consequatur eos?</p>
+                <h2>Historia</h2>
+                <p>Desde el primer día, Isabella y su abuela trabajaron incansablemente, horneando panes y dulces que
+                    pronto se convirtieron en los favoritos del pueblo. Los aromas de la panadería llenaban las calles y
+                    atraían a todos los vecinos, creando un ambiente cálido y familiar.
+
+                    Con el paso de los años, "La Dulce Esperanza" evolucionó. La hija de Isabella, Emilia, se unió al
+                    negocio, trayendo consigo nuevas ideas y recetas, pero siempre manteniendo el toque artesanal y el
+                    cariño en cada creación. Juntas, madre e hija transformaron la panadería en un lugar donde tradición
+                    y modernidad se encuentran.
+
+                    Hoy en día, "La Dulce Esperanza" no solo es un negocio, es un legado. Cada día, continuamos con la
+                    misma pasidedicación que Isabella tuvo desde el principio, ofreciendo productos frescos y
+                    deliciosos. Te invitamos a ser parte de nuestra historia, a disfrutar de nuestras creaciones y a
+                    sentirte como en casa.</p>
             </div>
             <img src="./img/Union-1024x579.jpg" alt="">
         </section>
     </main>
-    <footer id="pie"> 
-<img src="" alt="">
-<div>
-    <a href=""><img src="./img/facebook.png" alt=""></a>
-    <a href=""><img src="./img/instagram (2).png" alt=""></a>
-    <a href=""><img src="./img/whatsapp.png" alt=""></a>
-</div>
+    <footer class="footer">
+        <ul class="social-icons">
+            <li class="icon-elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="" class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li class="icon-elem">
+                <a href="" class="icon">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class="menu-element">
+                <a href="./index.html" class="menu-icon">Inicio</a>
+            </li>
+            <li class="menu-element">
+                <a href="./pages/panaderia.html" class="menu-icon">Panadería</a>
+            </li>
+            <li class="menu-element">
+                <a href="./pages/pasteleria.html" class="menu-icon">Pastelería</a>
+            </li>
+            <li class="menu-element">
+                <a href="./pages/galleteria.html" class="menu-icon">Galletería</a>
+            </li>
+            <li class="menu-element">
+                <a href="./pages/cafeteria.html" class="menu-icon">Cafetería</a>
+            </li>
+            <li class="menu-element">
+                <a href="./pages/contacto.html" class="menu-icon">Contactos</a>
+            </li>
+        </ul>
+        <p class="text"></p>
     </footer>
+    <script  type = "module"  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js " > </script> 
+<script  nomodule  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " > </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 </html>
